@@ -1,4 +1,4 @@
-The details of my algorithm, with its time and space complexity. Y
+The details of my algorithm, with its time and space complexity.
 > Time complexity of Version 2 is: O(n^3)
 Space complexity of Version 2 is: O(n^2)
 
