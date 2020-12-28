@@ -1,0 +1,24 @@
+Algorithm RevealStr(str, len) 
+INPUT string str of length len
+DECLARE ind, lind, str1, str2, op1, op2
+
+ind←str.str.indexOf('*')
+lind←str.str.lastIndexOf('*')
+
+{if first and last index are same, perform the operation one time and display output}
+IF ind=lind
+	str1←str.substring(0, ind)
+	str2←str.substring(ind+1, len)
+	op1←str1 + "0" + str2
+	op2←str1 + "1" + str2
+	OUTPUT op1
+	OUTPUT op2
+ELSE
+	str1←str.substring(0, ind)
+	str2←str.substring(ind+1, len)
+	op1←str1 + "0" + str2
+	op2←str1 + "1" + str2
+	RevealStr(op1, len)
+	RevealStr(op2, len)
+ENDIF
+

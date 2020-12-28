@@ -1,0 +1,78 @@
+Algorithm RevealStr(str)
+INPUT string str
+
+{count number of masks}
+DECLARE n
+n←0
+FOR a←0 TO str.length DO
+	IF str.charAt(a)=*
+		n←n+1
+	ENDIF
+	a←a+1
+ENDFOR
+
+{store indexes of masks in string}
+DECLARE indexes[n]
+ind←0
+FOR a←0 TO str.length DO
+	IF str.charAt(a)=*
+		indexes[ind]←a
+		ind←ind+1
+	ind←ind+1
+
+{store 0s and 1s in 2d array}
+DECLARE t, p, i, power, twod[n][Math.pow(2,n)]
+t←0
+p←0
+i=t
+power←0
+FOR j←0 TO n-1 DO
+	WHILE i<Math.pow(2,n)
+		FOR i←t TO Math.pow(2, power) DO			
+			IF i<Math.pow(2,n)
+				twod[i][j]="0"
+				p←p+!
+				i←i+1
+			ENDIF
+		ENDFOR
+		t←2*p
+	t←0
+	p←0
+	i←t
+	power←power+1
+	ENDWHILE
+	j←j+1
+ENDFOR
+FOR e←0 TO n-1 DO
+	FOR f←0 to Math.pow(2,n)-1
+		IF twod[e][f]=null
+			twod[e][f]="1"
+		ENDIF
+		f←f+1
+	ENDFOR
+	e←e+1
+ENDFOR
+         
+{rearrange 2d arrays to form a row-wise 1d array}                                
+DECLARE store, binary[Math.pow(2,n)]
+Store←""
+FOR w←0 TO Math.pow(2,n)-1 DO
+	FOR v←0 TO n-1 DO
+		store ← store + twod[v][w]		
+		v←v+1
+	ENDFOR
+	binary[w]=store
+	store←""
+	w←w+1
+ENDFOR
+
+{display output in console}
+DECLARE output
+output←str
+FOR y←0 TO binary.length-1 DO
+	output=str
+	FOR z←0 TO indexes.length-1 DO
+		output←output.substring(0, indexes[z]) + binary[y].charAt[z] + output.substring(indexes[z]+q, output.length)
+		z←z+1
+		OUTPUT output
+	y←y+1
