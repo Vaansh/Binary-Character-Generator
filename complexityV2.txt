@@ -2,7 +2,10 @@ The details of my algorithm, with its time and space complexity.
 > Time complexity of Version 2 is: O(n^3)
 Space complexity of Version 2 is: O(n^2)
 
-The iterative solution has only primitive operations inside all loops, nested or not. The algorithm consists of two for loops (2n), followed by a for loop nested inside a while loop which in turn is inside another for loop (n^3), after which there are another two nested for loops (2n^2). Finally, the output is displayed using a nested for loop (n^2). Therefore, the overall complexity is 2n + n^3 + 2n^2 + n^2 = O(n^3 + 3n^2 + 2n), or simply O(n^3).
+The iterative solution has only primitive operations inside all loops, nested or not. The algorithm consists of two for loops (2n), followed by
+a for loop nested inside a while loop which in turn is inside another for loop (n^3), after which there are another two nested for loops (2n^2). 
+Finally, the output is displayed using a nested for loop (n^2). Therefore, the overall complexity is 2n + n^3 + 2n^2 + n^2 = O(n^3 + 3n^2 + 2n),
+or simply O(n^3).
 Arrays hold 4 bytes of n 
 The solution uses 14 variables (14), 2 1d arrays (2n) and 1 2d array (1n^2), which gives it a space complexity of O(n^2 + 2n + 14), or O(n^2).
 
