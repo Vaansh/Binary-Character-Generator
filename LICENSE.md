@@ -1,6 +1,6 @@
 # END-USER LICENSE AGREEMENT
 
-This End-User License Agreement (EULA) is a legal agreement between you (either as an individual or on behalf of an entity) and Vaansh Lakhwara regarding your use of the GameBoard repository. IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS EULA, DO NOT CLONE, USE OR COPY THE SOFTWARE.
+This End-User License Agreement (EULA) is a legal agreement between you (either as an individual or on behalf of an entity) and Vaansh Lakhwara regarding your use of the RevealStr - Binary Character Generator repository. IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS EULA, DO NOT CLONE, USE OR COPY THE SOFTWARE.
 
 ### Summary
 
