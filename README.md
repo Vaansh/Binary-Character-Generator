@@ -1,4 +1,4 @@
-# RevealStr - Binary Character Generator
+# Binary Character Generator
 
 ## Description
 
@@ -8,7 +8,7 @@ A program planned in pseudo code and executed in Java of two adaptations of a pr
 
 Here's the complete folder structure of the project:
 ```
-|-- RevealStr - Binary Character Generator
+|-- Binary Character Generator
     |-- .gitignore
     |-- README.md
     |-- complexityV1.txt
